@@ -3,10 +3,16 @@ import HeroSection from "@/components/sections/hero-section";
 import AboutSection from "@/components/sections/about-section";
 import ListenSection from "@/components/sections/listen-section";
 import ContactSection from "@/components/sections/contact-section";
+import TargetCursor from "@/components/ui/target-cursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <TargetCursor 
+        spinDuration={2}
+        hideDefaultCursor={true}
+      />
+      
       {/* Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-4">

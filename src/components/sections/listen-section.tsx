@@ -51,9 +51,9 @@ const ListenSection = () => {
                     </span>
                   )}
                 </div>
-                <Button variant="outline" size="sm" className="ml-4">
+                <button className="cursor-target ml-4 border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-3 py-1 text-sm transition-colors duration-300">
                   PLAY
-                </Button>
+                </button>
               </div>
             </Card>
           ))}
@@ -62,9 +62,15 @@ const ListenSection = () => {
         <div className="text-center space-y-4">
           <p className="text-muted-foreground">Слушайте на всех площадках</p>
           <div className="flex justify-center space-x-6">
-            <Button variant="outline" className="text-sm">SPOTIFY</Button>
-            <Button variant="outline" className="text-sm">APPLE MUSIC</Button>
-            <Button variant="outline" className="text-sm">YANDEX MUSIC</Button>
+            <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-4 py-2 text-sm transition-colors duration-300">
+              SPOTIFY
+            </button>
+            <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-4 py-2 text-sm transition-colors duration-300">
+              APPLE MUSIC
+            </button>
+            <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-4 py-2 text-sm transition-colors duration-300">
+              YANDEX MUSIC
+            </button>
           </div>
         </div>
       </div>

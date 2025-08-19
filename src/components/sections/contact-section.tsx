@@ -38,9 +38,15 @@ const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Social Media</h3>
               <div className="flex space-x-4">
-                <Button variant="outline" size="sm">INSTAGRAM</Button>
-                <Button variant="outline" size="sm">TELEGRAM</Button>
-                <Button variant="outline" size="sm">VK</Button>
+                <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm transition-colors duration-300">
+                  INSTAGRAM
+                </button>
+                <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm transition-colors duration-300">
+                  TELEGRAM
+                </button>
+                <button className="cursor-target border border-border bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground px-3 py-2 text-sm transition-colors duration-300">
+                  VK
+                </button>
               </div>
             </div>
           </div>
@@ -50,31 +56,31 @@ const ContactSection = () => {
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2">Имя</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
-                  placeholder="Ваше имя"
-                />
+              <input
+                type="text"
+                className="cursor-target w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                placeholder="Ваше имя"
+              />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Email</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
-                  placeholder="your@email.com"
-                />
+              <input
+                type="email"
+                className="cursor-target w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                placeholder="your@email.com"
+              />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Сообщение</label>
-                <textarea
-                  rows={4}
-                  className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
-                  placeholder="Расскажите о вашем проекте..."
-                />
+              <textarea
+                rows={4}
+                className="cursor-target w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
+                placeholder="Расскажите о вашем проекте..."
+              />
               </div>
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                ОТПРАВИТЬ
-              </Button>
+            <button className="cursor-target w-full bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 transition-colors duration-300">
+              ОТПРАВИТЬ
+            </button>
             </form>
           </Card>
         </div>

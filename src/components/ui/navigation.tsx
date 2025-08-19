@@ -27,7 +27,7 @@ const Navigation = ({ className }: NavigationProps) => {
           <a
             key={item.name}
             href={item.href}
-            className="font-mono text-xs tracking-widest text-foreground hover:text-accent transition-colors duration-300 relative group"
+            className="cursor-target font-mono text-xs tracking-widest text-foreground hover:text-accent transition-colors duration-300 relative group"
             style={{animationDelay: `${index * 0.1}s`}}
           >
             {item.name}
